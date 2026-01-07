@@ -11,7 +11,7 @@
 
 | Phase | 항목 | 상태 | 진행률 |
 |-------|------|------|--------|
-| 1 | 프로젝트 초기 설정 | 대기 | 0% |
+| 1 | 프로젝트 초기 설정 | **완료** | 100% |
 | 2 | 데이터베이스 구축 | 대기 | 0% |
 | 3 | 백엔드 기본 구조 | 대기 | 0% |
 | 4 | 인증/권한 시스템 | 대기 | 0% |
@@ -30,43 +30,43 @@
 ## Phase 1: 프로젝트 초기 설정
 
 ### 1.1 백엔드 프로젝트 초기화
-- [ ] Poetry 프로젝트 생성 (`poetry init`)
-- [ ] Python 3.11+ 버전 설정
-- [ ] 기본 의존성 설치
-  - [ ] fastapi
-  - [ ] uvicorn[standard]
-  - [ ] pydantic
-  - [ ] pydantic-settings
-  - [ ] sqlalchemy[asyncio]
-  - [ ] asyncpg
-  - [ ] redis
-  - [ ] aioredis
-  - [ ] python-dotenv
-  - [ ] python-multipart
-  - [ ] python-jose[cryptography]
-  - [ ] passlib[bcrypt]
-  - [ ] httpx
-- [ ] AI/ML 의존성 설치
-  - [ ] langchain
-  - [ ] langchain-core
-  - [ ] langchain-anthropic
-  - [ ] langchain-openai
-  - [ ] langgraph
-  - [ ] pinecone-client
-  - [ ] sentence-transformers
-- [ ] 이미지 처리 의존성 설치
-  - [ ] opencv-python-headless
-  - [ ] pillow
-  - [ ] aiohttp
-  - [ ] aiofiles
-- [ ] 개발 도구 설치
-  - [ ] pytest
-  - [ ] pytest-asyncio
-  - [ ] pytest-cov
-  - [ ] black
-  - [ ] ruff
-  - [ ] mypy
-  - [ ] pre-commit
+- [x] Poetry 프로젝트 생성 (`poetry init`)
+- [x] Python 3.11+ 버전 설정
+- [x] 기본 의존성 설치
+  - [x] fastapi
+  - [x] uvicorn[standard]
+  - [x] pydantic
+  - [x] pydantic-settings
+  - [x] sqlalchemy[asyncio]
+  - [x] asyncpg
+  - [x] redis
+  - [x] aioredis
+  - [x] python-dotenv
+  - [x] python-multipart
+  - [x] python-jose[cryptography]
+  - [x] passlib[bcrypt]
+  - [x] httpx
+- [x] AI/ML 의존성 설치
+  - [x] langchain
+  - [x] langchain-core
+  - [x] langchain-anthropic
+  - [x] langchain-openai
+  - [x] langgraph
+  - [x] pinecone-client
+  - [x] sentence-transformers
+- [x] 이미지 처리 의존성 설치
+  - [x] opencv-python-headless
+  - [x] pillow
+  - [x] aiohttp
+  - [x] aiofiles
+- [x] 개발 도구 설치
+  - [x] pytest
+  - [x] pytest-asyncio
+  - [x] pytest-cov
+  - [x] black
+  - [x] ruff
+  - [x] mypy
+  - [x] pre-commit
 
 ### 1.2 디렉토리 구조 생성
 ```
@@ -200,34 +200,34 @@ medadreview-backend/
 ├── pytest.ini
 └── README.md
 ```
-- [ ] 위 디렉토리 구조 전체 생성
-- [ ] 모든 `__init__.py` 파일 생성
+- [x] 위 디렉토리 구조 전체 생성
+- [x] 모든 `__init__.py` 파일 생성
 
 ### 1.3 설정 파일 구성
-- [ ] `.env.example` 환경 변수 템플릿 작성
-- [ ] `app/config/settings.py` Pydantic Settings 구현
-- [ ] `app/config/logging.py` 로깅 설정 (structlog)
-- [ ] `pyproject.toml` Poetry 설정 완성
-- [ ] `.gitignore` 작성
-- [ ] `pytest.ini` 테스트 설정
-- [ ] `pre-commit` 설정 (.pre-commit-config.yaml)
+- [x] `.env.example` 환경 변수 템플릿 작성
+- [x] `app/config/settings.py` Pydantic Settings 구현
+- [x] `app/config/logging.py` 로깅 설정 (structlog)
+- [x] `pyproject.toml` Poetry 설정 완성
+- [x] `.gitignore` 작성
+- [x] `pytest.ini` 테스트 설정
+- [ ] `pre-commit` 설정 (.pre-commit-config.yaml) *(Phase 2에서 진행)*
 
 ### 1.4 프론트엔드 프로젝트 초기화
-- [ ] Next.js 16 프로젝트 생성 (App Router)
-- [ ] TypeScript 5.x 설정
-- [ ] Tailwind CSS 4.x 설정
-- [ ] 의존성 설치
-  - [ ] @tanstack/react-query
-  - [ ] zustand
-  - [ ] axios
-  - [ ] zod
-  - [ ] react-hook-form
-  - [ ] @hookform/resolvers
-  - [ ] date-fns
-  - [ ] lucide-react (아이콘)
-  - [ ] recharts (차트)
-  - [ ] react-dropzone
-- [ ] 디렉토리 구조 생성
+- [x] Next.js 16 프로젝트 생성 (App Router)
+- [x] TypeScript 5.x 설정
+- [x] Tailwind CSS 4.x 설정
+- [x] 의존성 설치
+  - [x] @tanstack/react-query
+  - [x] zustand
+  - [x] axios
+  - [x] zod
+  - [x] react-hook-form
+  - [x] @hookform/resolvers
+  - [x] date-fns
+  - [x] lucide-react (아이콘)
+  - [x] recharts (차트)
+  - [x] react-dropzone
+- [x] 디렉토리 구조 생성
   ```
   src/
   ├── app/                    # Next.js App Router
@@ -245,11 +245,11 @@ medadreview-backend/
   ├── types/                  # TypeScript 타입
   └── lib/                    # 유틸리티
   ```
-- [ ] ESLint + Prettier 설정
-- [ ] 경로 별칭 설정 (@/)
-- [ ] 디자인 시스템 컬러 설정
-  - [ ] Primary: 에메랄드 (`emerald-500` #10B981)
-  - [ ] 배경: 밝은 회색 (`gray-50` #F9FAFB)
+- [x] ESLint + Prettier 설정
+- [x] 경로 별칭 설정 (@/)
+- [x] 디자인 시스템 컬러 설정
+  - [x] Primary: 에메랄드 (`emerald-500` #10B981)
+  - [x] 배경: 밝은 회색 (`gray-50` #F9FAFB)
 
 ---
 
