@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+/*
+ * MedAdReview Design System
+ * Primary: Emerald (#10B981)
+ * Background: Light Gray (#F9FAFB)
+ */
+
+@theme {
+  /* Brand Colors - Emerald */
+  --color-primary: #10B981;
+  --color-primary-hover: #059669;
+  --color-primary-active: #047857;
+  --color-primary-light: #ECFDF5;
+  --color-primary-subtle: #D1FAE5;
+
+  /* Background Colors */
+  --color-bg-page: #F9FAFB;
+  --color-bg-card: #FFFFFF;
+  --color-bg-sidebar: #F3F4F6;
+
+  /* Verdict Colors */
+  --color-verdict-allow-bg: #DCFCE7;
+  --color-verdict-allow-text: #16A34A;
+  --color-verdict-conditional-bg: #FEF3C7;
+  --color-verdict-conditional-text: #D97706;
+  --color-verdict-deny-bg: #FEE2E2;
+  --color-verdict-deny-text: #DC2626;
+  --color-verdict-hold-bg: #F3F4F6;
+  --color-verdict-hold-text: #4B5563;
+
+  /* Severity Colors */
+  --color-severity-critical: #991B1B;
+  --color-severity-high: #DC2626;
+  --color-severity-medium: #D97706;
+  --color-severity-low: #65A30D;
+}
+
+/* Base styles */
+body {
+  @apply bg-gray-50 text-gray-900 antialiased;
+  font-family: 'Pretendard', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Focus ring style */
+*:focus-visible {
+  @apply outline-none ring-2 ring-emerald-500 ring-offset-2;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400;
+}
